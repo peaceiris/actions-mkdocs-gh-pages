@@ -1,3 +1,9 @@
+[![license](https://img.shields.io/github/license/peaceiris/actions-mkdocs-gh-pages.svg)](https://github.com/peaceiris/actions-mkdocs-gh-pages/blob/master/LICENSE)
+[![release](https://img.shields.io/github/release/peaceiris/actions-mkdocs-gh-pages.svg)](https://github.com/peaceiris/actions-mkdocs-gh-pages/releases/latest)
+[![GitHub release date](https://img.shields.io/github/release-date/peaceiris/actions-mkdocs-gh-pages.svg)](https://github.com/peaceiris/actions-mkdocs-gh-pages/releases)
+
+
+
 # GitHub Actions for MkDocs and GitHub Pages
 
 Build markdown documentation with [Material for MkDocs] and deploy to GitHub Pages automatically.
