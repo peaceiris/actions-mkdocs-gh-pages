@@ -28,7 +28,29 @@ Build markdown documentation with [Material for MkDocs] and push to GitHub Pages
 4. Go to "Settings > Secrets" of repository.
 5. Add your private deploy key as `ACTIONS_DEPLOY_KEY`
 
-### (2) Push to master branch
+### (2) Workflow
+
+```sh
+workflow "MkDocs workflow" {
+  on = "push"
+  resolves = ["Build and deploy"]
+}
+
+action "master" {
+  uses = "actions/bin/filter@master"
+  args = "branch master"
+}
+
+action "Build and deploy" {
+  needs = "master"
+  uses = "peaceiris/actions-mkdocs-gh-pages@master"
+  secrets = [
+    "ACTIONS_DEPLOY_KEY"
+  ]
+}
+```
+
+### (3) Push to master branch
 
 When you push to master branch, GitHub Actions runs.
 
