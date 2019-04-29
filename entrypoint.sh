@@ -3,7 +3,7 @@
 # fail on unset variables and command errors
 set -eux -o pipefail # -x: is for debugging
 
-# ensure that the GITHUB_TOKEN secret is included
+# ensure the variable is included
 if [[ -z "${ACTIONS_DEPLOY_KEY}" ]]; then
     echo "error: not found ACTIONS_DEPLOY_KEY"
     exit 1
