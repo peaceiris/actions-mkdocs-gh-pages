@@ -1,8 +1,15 @@
 #!/bin/sh
 
-# Fail on unset variables and command errors
-set -ex -o pipefail # -x: is for debugging
+# fail on unset variables and command errors
+set -eux -o pipefail # -x: is for debugging
 
+# ensure that the GITHUB_TOKEN secret is included
+if [[ -z "${ACTIONS_DEPLOY_KEY}" ]]; then
+    echo "error: not found ACTIONS_DEPLOY_KEY"
+    exit 1
+fi
+
+# setup ssh
 mkdir /root/.ssh
 ssh-keyscan -t rsa github.com > /root/.ssh/known_hosts
 echo "${ACTIONS_DEPLOY_KEY}" > /root/.ssh/id_rsa
