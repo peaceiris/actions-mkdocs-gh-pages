@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # fail on unset variables and command errors
-set -ex -o pipefail # -x: is for debugging
+set -e -o pipefail # -x: is for debugging
 
 
 # setup ssh
