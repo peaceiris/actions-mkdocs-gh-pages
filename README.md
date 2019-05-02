@@ -10,7 +10,7 @@ Build markdown documentation with [Material for MkDocs] and deploy to GitHub Pag
 
 [Material for MkDocs]: https://github.com/squidfunk/mkdocs-material
 
-![material.png](https://raw.githubusercontent.com/peaceiris/mkdocs-material-boilerplate/master/docs/images/material.png)
+![material.png](https://raw.githubusercontent.com/peaceiris/actions-mkdocs-gh-pages/master/material.png)
 
 
 
