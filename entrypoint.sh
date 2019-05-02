@@ -1,25 +1,27 @@
 #!/bin/sh
 
 # fail on unset variables and command errors
-set -eux -o pipefail # -x: is for debugging
+set -ex -o pipefail # -x: is for debugging
 
-# ensure the variable is included
+
+# setup ssh
 if [[ -z "${ACTIONS_DEPLOY_KEY}" ]]; then
     echo "error: not found ACTIONS_DEPLOY_KEY"
     exit 1
 fi
-
-# setup ssh
 mkdir /root/.ssh
 ssh-keyscan -t rsa github.com > /root/.ssh/known_hosts
 echo "${ACTIONS_DEPLOY_KEY}" > /root/.ssh/id_rsa
 chmod 400 /root/.ssh/id_rsa
 
-mkdocs build
 
+# build site
+mkdocs build "${MKDOCS_BUILD_OPTIONS}"
+
+
+# push to gh-pages branch
 remote_repo="git@github.com:${GITHUB_REPOSITORY}.git"
 remote_branch="gh-pages"
-
 cd site
 git init
 git config user.name "${GITHUB_ACTOR}"

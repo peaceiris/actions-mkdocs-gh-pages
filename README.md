@@ -50,9 +50,10 @@ action "master" {
 action "Build and deploy" {
   needs = "master"
   uses = "peaceiris/actions-mkdocs-gh-pages@v1.0.2"
-  secrets = [
-    "ACTIONS_DEPLOY_KEY"
-  ]
+  env = {
+    MKDOCS_BUILD_OPTIONS = "--config-file ./mkdocs-sample.yml"
+  }
+  secrets = ["ACTIONS_DEPLOY_KEY"]
 }
 ```
 
