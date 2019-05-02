@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # fail on unset variables and command errors
-set -eux -o pipefail # -x: is for debugging
+set -ex -o pipefail # -x: is for debugging
 
 # ensure the variable is included
 if [[ -z "${ACTIONS_DEPLOY_KEY}" ]]; then
