@@ -16,7 +16,7 @@ chmod 400 /root/.ssh/id_rsa
 
 
 # build site
-mkdocs build "${MKDOCS_BUILD_OPTIONS}"
+eval mkdocs build ${MKDOCS_BUILD_OPTIONS}
 
 
 # push to gh-pages branch
