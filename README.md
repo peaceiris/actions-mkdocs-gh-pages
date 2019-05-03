@@ -28,7 +28,7 @@ Build markdown documentation with [Material for MkDocs] and deploy to GitHub Pag
 
 ### (1) Add deploy Key
 
-1. Generate deploy key `ssh-keygen -t rsa -f mkdocs -q -N ""`
+1. Generate deploy key `ssh-keygen -t rsa -b 4096 -C "your@email.com" -f mkdocs -N ""`
 2. Go to "Settings > Deploy Keys" of repository.
 3. Add your public key within "Allow write access" option.
 4. Go to "Settings > Secrets" of repository.
