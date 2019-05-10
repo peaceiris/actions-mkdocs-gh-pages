@@ -69,3 +69,9 @@ When you push to master branch, GitHub Actions runs.
 [MIT License - peaceiris/actions-mkdocs-gh-pages]
 
 [MIT License - peaceiris/actions-mkdocs-gh-pages]: https://github.com/peaceiris/actions-mkdocs-gh-pages/blob/master/LICENSE
+
+
+
+## Supprt author
+
+- [peaceiris - Patreon](https://www.patreon.com/peaceiris)
