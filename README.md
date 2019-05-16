@@ -36,7 +36,7 @@ Build markdown documentation with [Material for MkDocs] and deploy to GitHub Pag
 
 ### (2) Workflow
 
-```sh
+```hcl
 workflow "MkDocs workflow" {
   on = "push"
   resolves = ["Build and deploy"]
