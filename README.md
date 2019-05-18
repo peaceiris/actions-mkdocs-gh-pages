@@ -49,7 +49,7 @@ action "branch-filter" {
 
 action "Build and deploy" {
   needs = "branch-filter"
-  uses = "peaceiris/actions-mkdocs-gh-pages@v1.1.3"
+  uses = "peaceiris/actions-mkdocs-gh-pages@v1.2.0"
   env = {
     MKDOCS_BUILD_OPTIONS = "--config-file ./mkdocs-sample.yml"
   }

@@ -1,4 +1,4 @@
-FROM peaceiris/mkdocs-material:v1.4.0
+FROM peaceiris/mkdocs-material:v1.5.0
 
 LABEL "com.github.actions.name"="MkDocs build and deploy to GitHub Pages"
 LABEL "com.github.actions.description"="Build markdown documentation with Material for MkDocs and deploy to GitHub Pages automatically."
