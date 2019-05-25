@@ -1,3 +1,17 @@
+This repository will not be updated in the future.
+
+Please, use the following GitHub Actions.
+
+- [peaceiris/actions-pipenv: GitHub Actions for Python project with pipenv](https://github.com/peaceiris/actions-pipenv)
+- [peaceiris/actions-gh-pages: GitHub Actions for deploying to GitHub Pages with Static Site Generators](https://github.com/peaceiris/actions-gh-pages)
+
+
+
+<details>
+<summary></summary>
+
+
+
 [![license](https://img.shields.io/github/license/peaceiris/actions-mkdocs-gh-pages.svg)](https://github.com/peaceiris/actions-mkdocs-gh-pages/blob/master/LICENSE)
 [![release](https://img.shields.io/github/release/peaceiris/actions-mkdocs-gh-pages.svg)](https://github.com/peaceiris/actions-mkdocs-gh-pages/releases/latest)
 [![GitHub release date](https://img.shields.io/github/release-date/peaceiris/actions-mkdocs-gh-pages.svg)](https://github.com/peaceiris/actions-mkdocs-gh-pages/releases)
@@ -72,6 +86,10 @@ When you push to master branch, GitHub Actions runs.
 
 
 
-## Supprt author
+## About the author
 
-- [peaceiris - Patreon](https://www.patreon.com/peaceiris)
+- [peaceiris's homepage](https://peaceiris.com/)
+
+
+
+</details>
