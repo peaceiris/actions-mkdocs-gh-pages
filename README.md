@@ -8,7 +8,7 @@ Please, use the following GitHub Actions.
 
 
 <details>
-<summary></summary>
+<summary>Click to expand the old README</summary>
 
 
 
