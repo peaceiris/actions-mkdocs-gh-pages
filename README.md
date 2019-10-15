@@ -2,7 +2,6 @@ This repository will not be updated in the future.
 
 Please, use the following GitHub Actions.
 
-- [peaceiris/actions-pipenv: GitHub Actions for Python project with pipenv](https://github.com/peaceiris/actions-pipenv)
 - [peaceiris/actions-gh-pages: GitHub Actions for deploying to GitHub Pages with Static Site Generators](https://github.com/peaceiris/actions-gh-pages)
 
 
